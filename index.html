@@ -1,0 +1,50 @@
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=, initial-scale=1.0">
+    <title>Contact from</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+  
+</head>
+
+<body>
+    <div class="contact-container">
+        <form action="https://api.web3forms.com/submit" method="POST" class="contact-left" onsubmit="return validateForm()">
+
+            <div class="contact-left-title">
+                <h2>Fill Information</h2>
+                <hr>
+            </div>
+
+            <input type="hidden" name="access_key" value="e2c045ed-e8d3-48ff-947c-c55b4a5f4e1a">
+
+            <div class="input-box">
+                <i class="fa fa-user"></i>
+                <input type="text" name="name" placeholder="Your Name" class="contact-input" required>
+            </div>
+
+            <div class="input-box">
+                <i class="fa fa-phone"></i>
+                <input type="text" name="mobile" placeholder="Your mobile no." class="contact-input" required>
+            </div>
+
+            <div class="input-box">
+                <i class="fa fa-envelope"></i>
+                <input type="email" name="email" placeholder="Your Email" class="contact-input" required>
+            </div>
+
+            <div class="input-box">
+                <i class="fa fa-comment"></i>
+                <textarea name="message" placeholder="Your Message" class="contact-input" required></textarea>
+            </div>
+
+            <button class="btn">Submit <img src="/assents/arrow.png" alt=""></button>
+
+        </form>
+    </div>
+    <script src="script.js"></script>
+</body>
+
+</html>
